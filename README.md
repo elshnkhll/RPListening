@@ -57,12 +57,12 @@ After pressing [Start] button 🎧 symbol apeeared on TV but no sound came of my
 In order to make it work, i was forced to run FFPLAY on separate terminal manually, 
 in a folder with the file roku.sdp containing following text.
 
-v=0
-o=- 0 0 IN IP4 127.0.0.1
-s=-
-c=IN IP4 127.0.0.1
-m=audio 5153 RTP/AVP 97
-a=rtpmap:97 opus/48000/2
+    v=0
+    o=- 0 0 IN IP4 127.0.0.1
+    s=-
+    c=IN IP4 127.0.0.1
+    m=audio 5153 RTP/AVP 97
+    a=rtpmap:97 opus/48000/2
 
 
 Here is my command line:
