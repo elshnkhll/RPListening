@@ -1,5 +1,5 @@
-RPListening
-============================
+Roku Private Listening Java App
+===============================
 
 Overview
 ------------
