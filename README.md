@@ -50,9 +50,8 @@ If you don't know your devices IP address you can find it using the following co
     java -jar RPListening-1.1.jar -d
 
 
-NOTE FROM ELSHNKHLL:
+⚠️ WARNING FROM ELSHNKHLL:
 
-Warning⚠️  a
 AFter following all instructions to the letter it didn't work on my MAC.
 After pressing [Start] button 🎧 symbol apeeared on TV but no sound came of my speakers.
 In order to make it work, i was forced to run FFPLAY on separate terminal manually, 
