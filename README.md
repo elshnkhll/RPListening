@@ -53,9 +53,9 @@ If you don't know your devices IP address you can find it using the following co
 NOTE FROM ELSHNKHLL:
 
 ⚠️ Warning after following all instructions to the letter it didn't work on my MAC.
-After pressing [Start] 🎧 symbol apeeared on TV but no sound came from my speackers.
-in order to make it work i was forced to run FFPLAY on separate terminal manually 
-in a folder with a file roku.sdp containing following text.
+After pressing [Start] button 🎧 symbol apeeared on TV but no sound came of my speakers.
+In order to make it work, i was forced to run FFPLAY on separate terminal manually, 
+in a folder with the file roku.sdp containing following text.
 
 v=0
 o=- 0 0 IN IP4 127.0.0.1
