@@ -51,6 +51,7 @@ If you don't know your devices IP address you can find it using the following co
 
 
 ⚠️ WARNING FROM ELSHNKHLL:
+-------------------------
 
 AFter following all instructions to the letter it didn't work on my MAC.
 After pressing [Start] button 🎧 symbol apeeared on TV but no sound came of my speakers.
