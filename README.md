@@ -4,7 +4,7 @@ Roku Private Listening Java App
 Overview
 ------------
 
-RPListening is an Open Source desktop client for Roku private listening.
+RPListening is an Open Source desktop client for Roku Private Listening coded in Java.
 
 Supported Operating Systems:
 * Mac OS
