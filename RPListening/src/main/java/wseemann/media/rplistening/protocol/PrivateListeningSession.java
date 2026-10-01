@@ -212,10 +212,9 @@ public class PrivateListeningSession {
 				@Override
 				public void onSetAudioOutput() {
 					Log.d(TAG, "onSetAudioOutput!");
-
 					session = new PrivateListeningSession(
 							rokuIPAddress,
-							hostAddress,
+							Constants.LOOPBACK_ADDRESS,
 							Constants.RTP_PORT,
 							Constants.RTCP_PORT,
 							Constants.RTP_PORT,

@@ -29,16 +29,19 @@ public class Constants {
 	public static int RTP_PORT = 6970;
 	public static int RTCP_PORT = 5150;
 	public static int RTP_PAYLOAD_TYPE = 97;
+
+	public static String LOOPBACK_ADDRESS = "127.0.0.1";
+	public static int LOCAL_AUDIO_PORT = 5153;
 	
 	public static String SDP_FILE = "v=0\n"
-			+ "o=- 0 0 IN IP4 127.0.0.1\n"
+			+ "o=- 0 0 IN IP4 " + LOOPBACK_ADDRESS + "\n"
 			+ "s=-\n"
-			+ "c=IN IP4 127.0.0.1\n"
-			+ "m=audio 5153 RTP/AVP 97\n"
-			+ "a=rtpmap:97 opus/48000/2";
+			+ "c=IN IP4 " + LOOPBACK_ADDRESS + "\n"
+			+ "m=audio " + LOCAL_AUDIO_PORT + " RTP/AVP " + RTP_PAYLOAD_TYPE + "\n"
+			+ "a=rtpmap:" + RTP_PAYLOAD_TYPE + " opus/48000/2";
 	
 	public static String FFPLAY_CMD = " | <ffplay>"
-			+ " -hide_banner -loglevel error -protocol_whitelist pipe,file,udp,rtp -vn -nodisp -nostats -i -";
+			+ " -hide_banner -loglevel error -protocol_whitelist fd,pipe,file,udp,rtp -vn -nodisp -nostats -i -";
 	
 	public static String [] FFPLAY_PATH_CMD = {"bash", "-c", "which ffplay"};
 }

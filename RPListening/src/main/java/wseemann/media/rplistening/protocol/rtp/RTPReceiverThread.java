@@ -8,6 +8,7 @@ import java.util.Random;
 
 import wseemann.media.rplistening.protocol.PrivateListeningSession;
 import wseemann.media.rplistening.protocol.Source;
+import wseemann.media.rplistening.utils.Constants;
 import wseemann.media.rplistening.utils.Log;
 
 public class RTPReceiverThread extends Thread {
@@ -179,7 +180,7 @@ public class RTPReceiverThread extends Thread {
 			try {
 				// Create a datagram packet from the RTP byte packet and set ttl and send
 				DatagramPacket pkt = new DatagramPacket(packet.getData(), packet.getLength(),
-						m_loopbackAddress, 5153);
+						m_loopbackAddress, Constants.LOCAL_AUDIO_PORT);
 				loopbackSocket.send(pkt);
 			} catch (IOException ex) {
 				ex.printStackTrace();
@@ -198,7 +199,7 @@ public class RTPReceiverThread extends Thread {
 			thread.start();
 		}
 	}
-
+	
 	/**
 	 * Validates RTP Packet. Returns true or false corresponding to the test
 	 * results.
